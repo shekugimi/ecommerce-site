@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './components/Global/Navbar/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Cart from './components/Cart/Cart';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './components/utils/Home/Home';
-import Cart from './components/utils/Cart/Cart';
-import Product from './components/utils/Products/Product';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './global/Navbar';
 
 function App() {
   return (
@@ -13,11 +13,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/products' element={<Product />} />
+
         </Routes>
       </Router>
+
     </>
+
   );
 }
 

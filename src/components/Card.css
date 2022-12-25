@@ -1,14 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    /* text-decoration: none; */
-}
-
 .card-main {
     box-sizing: border-box;
     width: 300px;
     height: 400px;
-    /* background: rgba(189, 207, 255, 0.4); */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
@@ -84,4 +77,29 @@
 .rating-count {
     font-size: 16px;
     margin-top: -5px;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+
+
+}
+
+.card-btn button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f24f00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+.card-btn button:hover {
+    opacity: .8;
 }
